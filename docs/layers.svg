@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs>
+<style>
+.t{font-family:Arial,Helvetica,sans-serif}
+.h{font-size:34px;font-weight:700;fill:#0f172a}
+.w{fill:#fff;stroke:#cbd5e1;stroke-width:2}
+.s1{fill:#dbeafe}.s2{fill:#dcfce7}.s3{fill:#ede9fe}.s4{fill:#ffedd5}.s5{fill:#fee2e2}
+.bt{font-size:26px;font-weight:700;fill:#0f172a}
+.st{font-size:18px;fill:#334155}
+.arr{stroke:#64748b;stroke-width:3;marker-end:url(#m)}
+</style>
+<marker id="m" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+  <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+</marker>
+</defs>
+<rect width="1400" height="900" fill="#f8fafc"/>
+<text x="70" y="80" class="t h">Agent Harness 五层设计</text>
+
+<rect x="140" y="130" rx="26" ry="26" width="1120" height="110" class="w s1"/>
+<text x="190" y="182" class="t bt">Layer 1 · Model Layer</text>
+<text x="190" y="214" class="t st">LLM / Vision / Routing：负责推理、生成、理解与调用能力</text>
+
+<rect x="140" y="270" rx="26" ry="26" width="1120" height="110" class="w s2"/>
+<text x="190" y="322" class="t bt">Layer 2 · Control Layer</text>
+<text x="190" y="354" class="t st">Prompt / Policy / Planning / Orchestration：负责策略、流程与角色分工</text>
+
+<rect x="140" y="410" rx="26" ry="26" width="1120" height="110" class="w s3"/>
+<text x="190" y="462" class="t bt">Layer 3 · Execution Layer</text>
+<text x="190" y="494" class="t st">Tools / Bash / Browser / Search / MCP：负责让 Agent 真正采取行动</text>
+
+<rect x="140" y="550" rx="26" ry="26" width="1120" height="110" class="w s4"/>
+<text x="190" y="602" class="t bt">Layer 4 · Runtime Layer</text>
+<text x="190" y="634" class="t st">Sandbox / Filesystem / Git / Network Policy：负责承载执行环境与状态</text>
+
+<rect x="140" y="690" rx="26" ry="26" width="1120" height="110" class="w s5"/>
+<text x="190" y="742" class="t bt">Layer 5 · Reliability Layer</text>
+<text x="190" y="774" class="t st">Compaction / Reset / Handoff / Tests / QA / Observability：负责稳定性与可用性</text>
+
+<line x1="700" y1="240" x2="700" y2="270" class="arr"/>
+<line x1="700" y1="380" x2="700" y2="410" class="arr"/>
+<line x1="700" y1="520" x2="700" y2="550" class="arr"/>
+<line x1="700" y1="660" x2="700" y2="690" class="arr"/>
+</svg>

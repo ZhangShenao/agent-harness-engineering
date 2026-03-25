@@ -1,0 +1,13 @@
+[project]
+name = "agent-harness-engineering"
+version = "0.1.0"
+description = "Agent Harness Engineering Practice"
+requires-python = ">=3.12"
+dependencies = [
+    "deepagents>=0.4.11",
+    "langchain-core>=1.2.20",
+    "langchain-openai>=1.1.11",
+    "langgraph>=1.0",
+    "langsmith>=0.7.22",
+    "python-dotenv>=1.1.1",
+]
